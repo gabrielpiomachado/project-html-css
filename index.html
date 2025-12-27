@@ -5,50 +5,65 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Meu HTML</title>
     <style>
-      * {
-        margin: 0;
-        padding: 0;
-      }
-
-      body {
-        background-image: url(https://assets.nflxext.com/ffe/siteui/vlv3/6d631aa6-567d-46ef-a644-b5b00e4334d2/web/BR-pt-20251215-TRIFECTA-perspective_bced7f72-5d64-4aad-9ba0-f4b79400b137_large.jpg);
-        background-size: cover;
-        background-position: top center;
-      }
-
-      .heading {
-        background: red;
-      }
-      .heading div{
-        width: 80%;
-        display: flex;
-        justify-content: space-between;
-        margin: 0 auto;
-      }
-
-      .heading .h1 {
-        padding: 15px 0px;
-        font-size: 24px;
-        text-transform: uppercase;
-      }
-
-      .heading a {
-        color: #fff;
-        text-decoration: none;
+      body{
         font-family: sans-serif;
+      }
+
+      table {
+        border-collapse: collapse;
+      }
+
+      table th, table td {
+        border: 1px solid #ccc;
+        padding: 5px;
+      }
+
+      table tfoot {
+        background-color: #e4dada;
       }
     </style>
   </head>
   <body>
-    <header class="heading">
-      <div>
-        <h1 class="h1">
-          <a href="#">Netflix</a>
-        </h1>
-        <h2 class="h1">
-          <a href="#">Entrar</a>
-        </h2>
-      </div>
-    </header>
+    <h1>Tabelas</h1>
+
+    <table>
+      <caption> Uma descrição da tabela</caption>
+      <thead>
+        <tr>
+          <th>Título 1</th>
+          <th>Título 2</th>
+          <th>Título 3</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Corpo 1</td>
+          <td>Corpo 2</td>
+          <td>Corpo 3</td>
+        </tr>
+        <tr>
+          <td>Corpo 1</td>
+          <td>Corpo 2</td>
+          <td>Corpo 3</td>
+        </tr>
+        <tr>
+          <td>Corpo 1</td>
+          <td>Corpo 2</td>
+          <td>Corpo 3</td>
+        </tr>
+        <tr>
+          <td>Corpo 1</td>
+          <td>Corpo 2</td>
+          <td>Corpo 3</td>
+        </tr>
+      </tbody>
+      <tfoot>
+        <tr>
+          <td>Corpo 1</td>
+          <td>Corpo 2</td>
+          <td>Corpo 3</td>
+        </tr>
+      </tfoot>
+    </table>
   </body>
 </html>
